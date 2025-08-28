@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: ANIME-RECOMMENDER
+Version: 0.1
+Author: Rohan Govekar
+Requires-Dist: langchain
+Requires-Dist: langchain-community
+Requires-Dist: langchain-fireworks
+Requires-Dist: langchain-huggingface
+Requires-Dist: chromadb
+Requires-Dist: pandas
+Requires-Dist: streamlit
+Requires-Dist: python-dotenv
+Requires-Dist: sentence-transformers
+Dynamic: author
+Dynamic: requires-dist

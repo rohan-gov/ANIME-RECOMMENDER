@@ -7,11 +7,11 @@ class AnimeDataLoader:
         
     def load_and_process_data(self):
         # Load the original CSV file
-        df = pd.read_csv(self.original_file_path, encoding='utf-8', error_bad_lines=False).dropna()
+        df = pd.read_csv(self.original_file_path, encoding='utf-8', on_bad_lines='skip').dropna()
         
         required_columns = ['Name', 'Genres', 'sypnopsis']
         
-        missing_columns = required_columns - set(df.columns)
+        missing_columns = set(required_columns) - set(df.columns)
         
         if missing_columns:
             raise ValueError(f"Missing required columns: {missing_columns}")
